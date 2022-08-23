@@ -8,18 +8,31 @@
     <script type="module" src="src/index.ts"></script>
   </head>
   <body>
-    <h1>Creoso</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lectus pharetra rutrum aliquam. Sed vehicula nulla nec dui aliquam, ullamcorper consequat libero scelerisque. Nam est dui, mattis eget tempus id, euismod a enim.</p>
-    <ul>
-      <li>
-        <a href="https://www.linkedin.com/in/aedd/" title="LinkedIn">
-          LinkedIn
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/drinkataco">
-          Github 
-        </a>
-      </li>
+    <div class="container mx-auto mt-10">
+      <div class="grid grid-cols-4 gap">
+        <div class="col-span-1">
+          <img src="./static/main.svg" class="mx-auto" width="70%" alt="Rabbit holding a newspaper. Generated using Dall-e"/>
+        </div>
+        <main class="col-span-3">
+          <h1>Creoso!</h1>
+          <p>Hi, I'm <strong>Josh</strong>, a software engineer from Birmingham, UK.</p>
+          <p>I have a great passion for devops and building teams to deliver high quality software; primarily building and maintaining systems in the cloud.</p>
+        </div>
+      </main>
+      <nav class="float-right mt-3">
+        <ul class="flex">
+          <li class="mr-6">
+            <a href="https://www.linkedin.com/in/aedd/" class="text-slate-700 hover:text-blue-400" title="LinkedIn">
+              LinkedIn
+            </a>
+          </li>
+          <li class="mr-6">
+            <a href="https://github.com/drinkataco" class="text-slate-700 hover:text-blue-400" title="GitHub">
+              Github 
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
   </body>
 </html>

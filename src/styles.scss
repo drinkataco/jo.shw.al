@@ -1,3 +1,48 @@
-* {
-  font-family: sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'https://fonts.googleapis.com/css2?family=Amiri:wght@400;700';
+
+body {
+  font-family: 'Amiri', 'Georgia', 'serif';
+  font-size: 1.2em;
+
+  @apply py-3;
+
+  .container {
+    max-width: 800px;
+  }
+
+  h1 {
+    @apply text-3xl mb-2;
+  }
+
+  h2 {
+    @apply text-2xl mb-2;
+  }
+
+  h3 {
+    @apply text-lg mb-2;
+  }
+
+  h4 {
+    @apply text-base mb-2;
+  }
+
+  p {
+    @apply my-3;
+  }
+
+  a {
+    @apply text-blue-400 underline;
+  }
+
+  blockquote {
+    @apply border-l-2 pl-4 text-slate-600 border-slate-400 my-5 block;
+  }
+
+  div.gatsby-resp-iframe-wrapper {
+    @apply my-3;
+  }
 }
