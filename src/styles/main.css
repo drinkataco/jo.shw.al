@@ -35,7 +35,7 @@ body {
 
   .bottom-links {
     @apply flex;
-    
+
     li {
       @apply mr-6;
     }
@@ -43,6 +43,7 @@ body {
     .icon svg {
       @apply inline;
       @apply text-gray-500;
+
       height: 24px;
       width: 24px;
     }
@@ -50,7 +51,7 @@ body {
     a {
       @apply text-gray-700;
     }
-    
+
     a:hover {
       @apply text-blue-400;
     }
