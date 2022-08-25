@@ -1,0 +1,7 @@
+@media screen(lg) {
+  body {
+    > div.container {
+      margin-top: 100px;
+    }
+  }
+}

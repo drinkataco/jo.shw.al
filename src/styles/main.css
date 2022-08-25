@@ -1,17 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import 'https://fonts.googleapis.com/css2?family=Amiri:wght@400;700';
-
 body {
-  font-family: 'Amiri', 'Georgia', 'serif';
-  font-size: 1.2em;
-
-  @apply py-3;
+  background-image: url('../../static/bg.png');
 
   .container {
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   h1 {
@@ -42,7 +33,26 @@ body {
     @apply border-l-2 pl-4 text-slate-600 border-slate-400 my-5 block;
   }
 
-  div.gatsby-resp-iframe-wrapper {
-    @apply my-3;
+  .bottom-links {
+    @apply flex;
+    
+    li {
+      @apply mr-6;
+    }
+
+    .icon svg {
+      @apply inline;
+      @apply text-gray-500;
+      height: 24px;
+      width: 24px;
+    }
+
+    a {
+      @apply text-gray-700;
+    }
+    
+    a:hover {
+      @apply text-blue-400;
+    }
   }
 }
