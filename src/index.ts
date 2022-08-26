@@ -1,31 +1,6 @@
-// interface Something {
-// message: string;
-// }
+import initialiseAnalytics from './analytics';
 
-// const x: Something = {
-// message: 'hello',
-// };
+const APP_NAME = 'jo.shw.al';
+const MEASUREMENT_ID = 'UA-112412841-1';
 
-// console.log(x);
-
-// let z = 1;
-// z++;
-[1, 2, 3].map((x) => {
-  const y = x + 1;
-  return x * y;
-});
-
-class X {
-  __construct() {
-    console.log('construct');
-  }
-
-  get x() {
-    console.log('na');
-    return 'a';
-  }
-}
-
-console.log(z);
-
-new X();
+initialiseAnalytics(APP_NAME, [MEASUREMENT_ID]);
