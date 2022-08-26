@@ -1,6 +1,6 @@
 # Personal Website
 
-Personal minimum footprint website using Parceljs.
+Personal minimum footprint website using [Parceljs](https://parceljs.org/).
 
 Use `npm start` to start developement server.
 
