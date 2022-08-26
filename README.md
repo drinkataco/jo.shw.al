@@ -20,11 +20,14 @@ Use prettier to format all documents.
 
 Use `npm run deploy` to deploy using the [cdk-static-site](https://github.com/drinkataco/cdk-static-site) deployment suite.
 
-Please consult the readme of this repo for how to set up a .env file (which should be placed on the root of this repo). The content path of this deployment will always be set to the current directoy.
+### Environment Variables
+
+The listed environment variables here are used on the parceljs bundler to place variables in your javascriupt files. Consult [cdk-static-site](https://github.com/drinkataco/cdk-static-site) documentation for other environment variables which will be used in the deployment phase
+
+- `APP_NAME` - name of your application, used in Google Analytics and CDK deployment
+- `MEASUREMENT_ID` - Google Analytics Measurement ID. Leave blank for no tracking.
 
 ## CI/CD
-
-[TODO]
 
 Each branch will automatically run linting and tests.
 
