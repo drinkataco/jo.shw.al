@@ -7,8 +7,9 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
+    "deploy": "echo 'DEPLOY ME' && ls dist",
     "lint:a11y": "pa11y --standard WCAG2AAA index.html",
-    "lint:ts": "eslint .",
+    "lint:js": "eslint .",
     "lint:css": "stylelint src/**/*.css"
   },
   "author": "Josh Walwyn <me@joshwalwyn.com>",

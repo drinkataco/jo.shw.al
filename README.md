@@ -1,5 +1,7 @@
 # Personal Website
 
+![Build](https://github.com/drinkataco/jo.shw.al/actions/workflows/main.yaml/badge.svg)
+
 Personal minimum footprint website using [Parceljs](https://parceljs.org/).
 
 Use `npm start` to start developement server.
