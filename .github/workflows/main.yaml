@@ -47,6 +47,17 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run lint:css
+  html:
+    runs-on: ubuntu-latest
+    needs: [install]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'npm'
+      - run: npm ci
+      - run: npm run lint:html
   build:
     runs-on: ubuntu-latest
     needs: [eslint, stylelint, pa11y]
