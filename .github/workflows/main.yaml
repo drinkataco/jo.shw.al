@@ -60,7 +60,7 @@ jobs:
       - run: npm run lint:html
   build:
     runs-on: ubuntu-latest
-    needs: [eslint, stylelint, pa11y]
+    needs: [eslint, stylelint, pa11y, html]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
