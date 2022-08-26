@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['stylelint-config-prettier'],
-  plugins: ['stylelint-prettier'],
+  plugins: ['stylelint-prettier', 'stylelint-order'],
   rules: {
     'at-rule-no-unknown': [
       true,
@@ -17,5 +17,6 @@ module.exports = {
     'declaration-block-trailing-semicolon': null,
     'no-descending-specificity': null,
     'prettier/prettier': true,
+    'order/properties-alphabetical-order': true,
   },
 };
