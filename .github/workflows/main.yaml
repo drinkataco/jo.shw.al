@@ -92,6 +92,6 @@ jobs:
       - uses: addnab/docker-run-action@v3
         with:
           image: ghcr.io/drinkataco/cdk-static-site:latest
-          options: -v dist:/work --env-file=.env.cdk
+          options: --volume ${{ github.workspace }}/dist:/srv --env-file=.env.cdk
           run: |
             npm run cdk:deploy -- --require-approval never
