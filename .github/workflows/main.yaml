@@ -70,7 +70,7 @@ jobs:
       - run: npm ci
       - name: Get environment variables
         run: |
-          echo "${secrets.ENV_FILE}" > .env
+          echo "${{ secrets.ENV_FILE }}" > .env
       - run: npm run build
       - uses: actions/cache@v3
         with:
