@@ -29,4 +29,4 @@ Use prettier to format all documents.
 
 Each branch will automatically run linting and tests. Build environment variables are sourced from a repo secret named `ENV_FILE`.
 
-To deploy with CICD create a tag with a semantic version (such as `v1.11.5`). 
+To deploy with CICD create a tag with a semantic version (such as `v1.11.5`). The [cdk-static-site](https://ghcr.io/drinkataco/cdk-static-site) package runs for deployment, and sources deployment environment variables from the repo secret named `DEPLOY_ENV_FILE`. Consult the cdk-static-site README for more information about values in this secret.

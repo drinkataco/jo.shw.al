@@ -7,7 +7,6 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "deploy": "echo 'DEPLOY ME' && ls dist",
     "lint:a11y": "pa11y --standard WCAG2AAA index.html",
     "lint:html": "w3c-html-validator index.html",
     "lint:js": "eslint .",
