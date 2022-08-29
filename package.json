@@ -2,13 +2,13 @@
   "name": "personal-website",
   "version": "1.0.0",
   "description": "My personal website",
-  "source": "index.html",
+  "source": "src/index.html",
   "repository": "https://git.shw.al/personal-website",
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "lint:a11y": "pa11y --standard WCAG2AAA index.html",
-    "lint:html": "w3c-html-validator index.html",
+    "lint:a11y": "pa11y --standard WCAG2AAA src/index.html",
+    "lint:html": "w3c-html-validator src/index.html",
     "lint:js": "eslint .",
     "lint:css": "stylelint src/**/*.css"
   },
