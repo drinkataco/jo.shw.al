@@ -15,7 +15,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
   pa11y:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: [install]
     steps:
       - uses: actions/checkout@v3
